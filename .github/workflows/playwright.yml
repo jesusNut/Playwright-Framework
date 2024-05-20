@@ -16,9 +16,11 @@ jobs:
           node-version: lts/*
       - name: Install dependencies
         run: npm ci
+      - name: Install Allure-Commandline dependency
+        run: npm i allure-commandline
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
-      - name: Run Playwright tests
+      - name: Run Playwright regression test on qa environment
         run: npm run test:chromium-qa-regression
       - uses: actions/upload-artifact@v4
         if: always()

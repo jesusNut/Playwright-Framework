@@ -21,10 +21,13 @@ export class SigninPage extends BasePage {
   }
 
   async signInToApplication() {
-    console.log("the email is : ", env.USERNAME);
-    console.log("the password is : ", env.USERNAME);
-    await this.email_input.fill(env.USERNAME);
-    await this.password_input.fill(env.PASSWORD);
+    await expect(async () => {
+      await this.email_input.fill(env.USERNAME);
+      await expect(this.email_input).toHaveValue(env.USERNAME);
+      await this.password_input.fill(env.PASSWORD);
+      await expect(this.password_input).toHaveValue(env.PASSWORD);
+    }).toPass();
+
     const signInButtonLocator = await findValidElement(
       this.page,
       this.signin_btn,
