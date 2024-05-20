@@ -1,30 +1,30 @@
-import { test } from "@playwright/test";
+//import { test } from "@playwright/test";
 //import { convertCsvFileToJsonFile } from "@utils/CsvtoJsonUtil";
-import { decrypt } from "@utils/CryptojsUtil";
-// import { encryptEnvFile } from "@utils/EncryptEnvFile";
-// import {decryptEnvFile} from "@utils/EncryptEnvFile";
-import { env } from "@config/env";
+//import { encrypt,decrypt } from "@utils/CryptojsUtil";
+//import { encryptEnvFile } from "@utils/EncryptEnvFile";
+//import {decryptEnvFile} from "@utils/EncryptEnvFile";
+//import { env } from "@config/env";
 // import { generateTestData, exportToCsv, exportToJson } from "@utils/FakerDataUtil";
 
-test("sample test to know environment variables health", () => {
-  console.log(process.env.NODE_ENV);
-  console.log(process.env.USER);
-  console.log(process.env.PASSWORD);
-  console.log(decrypt(env.USERNAME));
-  console.log(decrypt(env.PASSWORD));
-  console.log(decrypt(env.BASE_URL));
-  console.log("************************");
-  //   console.log(env.BASE_URL);
-  //   console.log(env.USERNAME);
-  //   console.log(env.PASSWORD);
+// test("sample test to know environment variables health", () => {
+//   console.log(process.env.NODE_ENV);
+//   console.log(process.env.USER);
+//   console.log(process.env.PASSWORD);
+//   console.log(decrypt(env.USERNAME));
+//   console.log(decrypt(env.PASSWORD));
+//   console.log(decrypt(env.BASE_URL));
+//   console.log("************************");
+//   //   console.log(env.BASE_URL);
+//   //   console.log(env.USERNAME);
+//   //   console.log(env.PASSWORD);
 
-  //   const plaintext = "Hello, Mars!";
-  //   console.log(`Salt is : ${process.env.SALT}`);
-  //   const encryptedText = encrypt(plaintext);
-  //   console.log(`Encrypted text is ${encryptedText}`);
-  //   const decryptedtext = decrypt(encryptedText);
-  //   console.log(`Decrypted text is ${decryptedtext}`);
-});
+//   //   const plaintext = "Hello, Mars!";
+//   //   console.log(`Salt is : ${process.env.SALT}`);
+//   //   const encryptedText = encrypt(plaintext);
+//   //   console.log(`Encrypted text is ${encryptedText}`);
+//   //   const decryptedtext = decrypt(encryptedText);
+//   //   console.log(`Decrypted text is ${decryptedtext}`);
+// });
 
 // test("Run me to encrypt the env files", () => {
 //   encryptEnvFile();
