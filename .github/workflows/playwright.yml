@@ -45,9 +45,9 @@ jobs:
         uses: actions/upload-artifact@master
         if: always()
         with:
-           name: playwright-report
-           path: playwright-report/
-           retention-days: 30
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
 
       - name: Get Allure history
         uses: actions/checkout@v4
