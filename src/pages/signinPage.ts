@@ -21,6 +21,8 @@ export class SigninPage extends BasePage {
   }
 
   async signInToApplication() {
+    console.log("the email is : ", env.USERNAME);
+    console.log("the password is : ", env.USERNAME);
     await this.email_input.fill(env.USERNAME);
     await this.password_input.fill(env.PASSWORD);
     const signInButtonLocator = await findValidElement(
