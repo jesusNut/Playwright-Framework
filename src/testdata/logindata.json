@@ -1,0 +1,20 @@
+[
+  {
+    "scenario": "Only email",
+    "email": "abc.def@somemail.com",
+    "password": "       ",
+    "expectedMessage": "password can't be blank"
+  },
+  {
+    "scenario": "Only password",
+    "email": "      ",
+    "password": "rich2020",
+    "expectedMessage": "email can't be blankK"
+  },
+  {
+    "scenario": "Invalid password",
+    "email": "abc.def@somemail.com",
+    "password": "Bondar121",
+    "expectedMessage": "email or password is invalid"
+  }
+]
