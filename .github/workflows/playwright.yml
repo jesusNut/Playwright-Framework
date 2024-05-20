@@ -34,22 +34,20 @@ jobs:
 
       - name: Run Playwright regression test cross browser on QA environment
         run:
-          "npx playwright test --project ${{matrix.browser}} --grep
-          '@regression'"
-        env:
-          NODE_ENV: "qa"
+          "NODE_ENV=qa npx playwright test --project ${{matrix.browser}} --grep
+          @regression"
 
       - name: Generate Allure report
         if: always()
         run: "npm run posttest-ci"
 
-      - name: Upload Allure Report
+      - name: Upload HTML Report
         uses: actions/upload-artifact@master
         if: always()
         with:
-          name: allure-results
-          path: allure-results
-          retention-days: 5
+           name: playwright-report
+           path: playwright-report/
+           retention-days: 30
 
       - name: Get Allure history
         uses: actions/checkout@v4
