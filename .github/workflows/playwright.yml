@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 20
           cache: "npm"
 
       - name: Install dependencies
@@ -36,10 +36,12 @@ jobs:
           NODE_ENV: "qa"
 
       - name: Generate Allure report
+        if: always()
         run: "npm run posttest-ci"
 
       - name: Upload Allure Report
         uses: actions/upload-artifact@master
+        if: always()
         with:
           name: allure-results
           path: allure-results

@@ -62,9 +62,9 @@ export default defineConfig({
     ],
   ],
   use: {
-    trace: "on",
+    trace: "off",
     video: "on",
-    screenshot: "on",
+    screenshot: "off",
   },
   projects: [
     {
