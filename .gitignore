@@ -6,3 +6,4 @@ node_modules/
 allure-results/
 allure-report/
 downloads
+tsconfig.tsbuildinfo

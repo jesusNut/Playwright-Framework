@@ -5,7 +5,7 @@ export class BasePage {
 
   constructor(protected readonly page: Page) {}
 
-   async waitForURLToBePresent(expectedURL: string) {
+  async waitForURLToBePresent(expectedURL: string) {
     await this.page.waitForURL(expectedURL);
   }
 

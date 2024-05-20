@@ -53,6 +53,5 @@ export class LandingPage extends BasePage {
   async returnPromotionPage() {
     await this.visit();
     return await this.returnNewWindow(this.promotionPageLink);
-   
   }
 }
