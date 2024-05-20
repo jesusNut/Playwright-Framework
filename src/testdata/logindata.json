@@ -9,7 +9,7 @@
     "scenario": "Only password",
     "email": "      ",
     "password": "rich2020",
-    "expectedMessage": "email can't be blankK"
+    "expectedMessage": "email can't be blank"
   },
   {
     "scenario": "Invalid password",
