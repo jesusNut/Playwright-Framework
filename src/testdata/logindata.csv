@@ -1,4 +1,0 @@
-﻿scenario,email,password,expectedMessage
-Only email,abc.def@somemail.com,       ,password can't be blank
-Only password,      ,rich2020,email can't be blank
-Invalid password,abc.def@somemail.com,Bondar121,email or password is invalid
