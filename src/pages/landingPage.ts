@@ -1,5 +1,5 @@
 import { Locator, Page, expect } from "@playwright/test";
-import { env } from "@config/env";
+//import { env } from "@config/env";
 import { BasePage } from "@pages/basePage";
 
 export class LandingPage extends BasePage {
@@ -21,7 +21,7 @@ export class LandingPage extends BasePage {
   }
 
   async visit() {
-    await this.page.goto(env.BASE_URL);
+    await this.page.goto(process.env.URL!);
   }
 
   async clickSignInLink() {

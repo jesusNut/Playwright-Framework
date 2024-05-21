@@ -1,7 +1,8 @@
 import { Locator, Page, expect } from "@playwright/test";
-import { env } from "@config/env";
+//import { env } from "@config/env";
 import { BasePage } from "@pages/basePage";
 import findValidElement from "@src/utils/SelfHealingUtils";
+import { decrypt } from "../utils/CryptojsUtil";
 
 export class SigninPage extends BasePage {
   private readonly email_input: Locator;
@@ -21,9 +22,8 @@ export class SigninPage extends BasePage {
   }
 
   async signInToApplication() {
-    console.log(env.USERNAME);
-    await this.email_input.fill(env.USERNAME);
-    await this.password_input.fill(env.PASSWORD);
+    await this.email_input.fill(decrypt(process.env.USER!));
+    await this.password_input.fill(process.env.PASSWORD!);
 
     const signInButtonLocator = await findValidElement(
       this.page,
