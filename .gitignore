@@ -1,9 +1,0 @@
-node_modules/
-/test-results/
-/playwright-report/
-/playwright/.cache/
-/playwright/.auth/
-allure-results/
-allure-report/
-downloads
-tsconfig.tsbuildinfo
