@@ -86,5 +86,14 @@ export default defineConfig({
         acceptDownloads: true,
       },
     },
+    {
+      name: "webkit",
+      use: {
+        ...devices["Desktop Safari"],
+        viewport: { width: 1500, height: 730 },
+        ignoreHTTPSErrors: true,
+        acceptDownloads: true,
+      },
+    },
   ],
 });
