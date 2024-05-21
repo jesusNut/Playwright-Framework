@@ -24,8 +24,6 @@ export function decrypt(cipherText: string) {
   // Get the SALT from the system environment variable
   try {
     const SALT = process.env.SALT || "GodIsGod";
-    console.log("SALT IS:", SALT);
-    console.log("Cipher text is:", cipherText);
     const bytes = CryptoJSUtil.AES.decrypt(cipherText, SALT);
     let originalText = bytes.toString(CryptoJSUtil.enc.Utf8);
     originalText = removeBom(originalText);
