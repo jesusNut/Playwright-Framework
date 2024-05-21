@@ -11,7 +11,7 @@ jobs:
       matrix:
         browser: ["chromium"]
     timeout-minutes: 60
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout code
         uses: actions/checkout@v4
@@ -34,8 +34,7 @@ jobs:
 
       - name: Run Playwright regression test cross browser on QA environment
         run:
-          "NODE_ENV=qa npx playwright test --project ${{matrix.browser}} --grep
-          @regression"
+          "npx playwright test --project ${{matrix.browser}} --grep @regression"
 
       - name: Generate Allure report
         if: always()

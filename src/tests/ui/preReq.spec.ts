@@ -1,7 +1,7 @@
-import { test } from "@playwright/test";
+//import { test } from "@playwright/test";
 //import { convertCsvFileToJsonFile } from "@utils/CsvtoJsonUtil";
 //import { encrypt,decrypt } from "@utils/CryptojsUtil";
-import { encryptEnvFile } from "@utils/EncryptEnvFile";
+//import { encryptEnvFile } from "@utils/EncryptEnvFile";
 //import {decryptEnvFile} from "@utils/EncryptEnvFile";
 //import { env } from "@config/env";
 // import { generateTestData, exportToCsv, exportToJson } from "@utils/FakerDataUtil";
@@ -26,9 +26,9 @@ import { encryptEnvFile } from "@utils/EncryptEnvFile";
 //   //   console.log(`Decrypted text is ${decryptedtext}`);
 // });
 
-test("Run me to encrypt the env files", () => {
-  encryptEnvFile();
-});
+// test("Run me to encrypt the env files", () => {
+//   encryptEnvFile();
+// });
 
 // test("Run me to decrypt the env files", () => {
 //   decryptEnvFile();
