@@ -1,0 +1,1 @@
+[![Playwright Tests 🚀 🚀 🚀](https://github.com/jesusNut/Playwright-Framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/jesusNut/Playwright-Framework/actions/workflows/playwright.yml)
