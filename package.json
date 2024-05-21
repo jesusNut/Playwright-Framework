@@ -17,7 +17,6 @@
     "open:reports": "npx allure open ./allure-report",
     "pretest": "npm run clean:reports",
     "posttest": "npm run generate:reports && npm run open:reports",
-    "posttest-ci": "npm run generate:reports",
     "setenv:qa": "cross-env NODE_ENV=qa",
     "setenv:uat": "cross-env NODE_ENV=uat",
     "execute:OnChromium": "npx playwright test --project chromium",
