@@ -7,9 +7,9 @@ on:
   workflow_dispatch:
 jobs:
   ui-test:
-    strategy:
-      matrix:
-        browser: ["chromium", "webkit"]
+    # strategy:
+    #   matrix:
+    #     browser: ["chromium", "webkit"]
     timeout-minutes: 60
     runs-on: ubuntu-latest
     permissions:
@@ -32,8 +32,8 @@ jobs:
 
       - name: Run Playwright regression test cross browser on QA environment
         run:
-          "NODE_ENV=qa npx playwright test --project ${{matrix.browser}} --grep
-          @smoke"
+          "NODE_ENV=qa npx playwright test --project=chromium --project=webkit
+          --grep @smoke"
 
       - name: Upload HTML Report
         uses: actions/upload-artifact@master
