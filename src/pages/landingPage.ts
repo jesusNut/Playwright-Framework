@@ -1,6 +1,7 @@
 import { Locator, Page, expect } from "@playwright/test";
 //import { env } from "@config/env";
 import { BasePage } from "@pages/basePage";
+import { decrypt } from "../utils/CryptojsUtil";
 
 export class LandingPage extends BasePage {
   private readonly signin_lnk: Locator;
@@ -21,7 +22,7 @@ export class LandingPage extends BasePage {
   }
 
   async visit() {
-    await this.page.goto(process.env.URL!);
+    await this.page.goto(decrypt(process.env.URL!));
   }
 
   async clickSignInLink() {
