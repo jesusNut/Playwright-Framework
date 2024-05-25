@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat May 25 13:13:46 GMT 2024","Sat May 25 13:13:47 GMT 2024","1010","chromium","ui/landingPageTests.spec.ts","","","","Validate the Header Text of landing page",""
+"passed","Sat May 25 13:13:56 GMT 2024","Sat May 25 13:13:57 GMT 2024","980","webkit","ui/landingPageTests.spec.ts","","","","Validate the Header Text of landing page",""
+"passed","Sat May 25 13:13:47 GMT 2024","Sat May 25 13:13:48 GMT 2024","960","chromium","ui/landingPageTests.spec.ts","","","","Validate the Sidebar text of landing page",""
+"passed","Sat May 25 13:13:57 GMT 2024","Sat May 25 13:13:59 GMT 2024","1503","webkit","ui/landingPageTests.spec.ts","","","","Validate the Sidebar text of landing page",""
+"passed","Sat May 25 13:13:44 GMT 2024","Sat May 25 13:13:46 GMT 2024","2257","chromium","ui/landingPageTests.spec.ts","","","","Validate the title of landing page",""
+"passed","Sat May 25 13:13:49 GMT 2024","Sat May 25 13:13:56 GMT 2024","7778","webkit","ui/landingPageTests.spec.ts","","","","Validate the title of landing page",""
