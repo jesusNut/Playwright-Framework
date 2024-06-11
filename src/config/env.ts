@@ -1,4 +1,4 @@
-import { decrypt } from "../utils/CryptojsUtil";
+import { decrypt } from "@utils/CryptojsUtil";
 
 export class env {
   public static readonly BASE_URL = decrypt(process.env.URL!);
